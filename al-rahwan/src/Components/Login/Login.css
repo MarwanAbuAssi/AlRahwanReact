@@ -35,8 +35,8 @@ input[type=butoon]:hover {
     background-color: #45a049;
 }
 body{
-    background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg");
-
+    /*background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg");*/
+/**/
 }
 form {
     width: 30% !important;
