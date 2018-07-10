@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
-import Login from './Comtainers/Login/Login'
+import Login from './Container/Login/Login'
 class App extends Component {
   render() {
     return (
