@@ -1,15 +1,15 @@
-input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-bottom: 30px;
+/*input[type=text], select {*/
+    /*width: 100%;*/
+    /*padding: 12px 20px;*/
+    /*margin: 8px 0;*/
+    /*display: inline-block;*/
+    /*border: 1px solid #ccc;*/
+    /*border-radius: 4px;*/
+    /*box-sizing: border-box;*/
+    /*margin-bottom: 30px;*/
 
-}
-input[type=password], select {
+/*}*/
+.loginInput {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -38,7 +38,7 @@ body{
     /*background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg");*/
 /**/
 }
-form {
+#loginForm {
     width: 30% !important;
     height: 500px !important;
     padding: 20px;

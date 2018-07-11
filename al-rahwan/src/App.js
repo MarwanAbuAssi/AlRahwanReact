@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import logo from './logo.svg';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 // import FullCalendar from 'fullcalendar';
@@ -10,16 +10,18 @@ import 'primeicons/primeicons.css';
 import ScheduleCalender from './Container/Schedule/ScheduleCalender'
 import './App.css';
 import Login from './Container/Login/Login'
-class App extends Component {
-  render() {
-    return (
-      <div className="">
-          {/*<Login/>*/}
-        <ScheduleCalender/>
+import Reservation from './Container/Reservation/Reservation'
 
-      </div>
-    );
-  }
+class App extends Component {
+    render() {
+        return (
+            <div className="">
+                {/*<Login/>*/}
+                {/*<ScheduleCalender/>*/}
+                <Reservation/>
+            </div>
+        );
+    }
 }
 
 export default App;
