@@ -11,7 +11,7 @@
     tab-size: 19px;
 }
 #mainDiv{
-    background-image:url("../../Assets/Images/aisle-beach-celebration-169198.jpg");
+    background-image:url("../../Assets/Images/adult-baking-bride-543226.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -36,7 +36,7 @@
 
 }
 input[type=checkbox], select {
-margin-left: 30px;
+    margin-left: 30px;
     margin-right: 5px;
 }
 .submitText{

@@ -11,7 +11,7 @@ import ScheduleCalender from './Container/Schedule/ScheduleCalender'
 import './App.css';
 import Login from './Container/Login/Login'
 import Reservation from './Container/Reservation/Reservation'
-
+import ViewReservation from './Container/viewReservation/viewReservation'
 class App extends Component {
     render() {
         return (
@@ -19,6 +19,7 @@ class App extends Component {
                 {/*<Login/>*/}
                 {/*<ScheduleCalender/>*/}
                 <Reservation/>
+                {/*<ViewReservation/>*/}
             </div>
         );
     }
