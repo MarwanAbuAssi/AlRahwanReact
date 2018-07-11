@@ -35,8 +35,8 @@ const ReservationForm = (props) => {
                 <lable>Note:</lable>
                 <textarea className="reFormInput" rows="3" type="text"></textarea>
                 <div className='buttonsDiv'>
-                    <div className='canelText' >Cancel</div>
                     <div className='submitText' >Continue</div>
+                    <div className='canelText' >Cancel</div>
                 </div>
 
 
