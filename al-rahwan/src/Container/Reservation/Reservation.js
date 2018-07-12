@@ -1,22 +1,23 @@
 import React, {Component} from 'react'
 import ViewReservation from '../viewReservation/viewReservation'
 import classes from './Reservation.css'
+
 class Reservation extends Component {
     state = {
         show: false
     }
-    handelHide=()=>{
-         this.setState({show:false});
+    handelHide = () => {
+        this.setState({show: false});
     }
 
     render() {
 
-let view =null;
-if(this.state.show){
-    view =<ViewReservation show={this.state.show}
-                           hide={this.handelHide}
-    ></ViewReservation>
-}
+        let view = null;
+        if (this.state.show) {
+            view = <ViewReservation show={this.state.show}
+                                    hide={this.handelHide}
+            ></ViewReservation>
+        }
         return (
 
             <div>{view}

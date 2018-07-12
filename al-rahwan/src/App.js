@@ -12,14 +12,17 @@ import './App.css';
 import Login from './Container/Login/Login'
 import Reservation from './Container/Reservation/Reservation'
 import ViewReservation from './Container/viewReservation/viewReservation'
-import {  Route, Switch } from 'react-router-dom'
-import { BrowserRouter as Router } from 'react-router-dom'
+import {Route, Switch} from 'react-router-dom'
+import {BrowserRouter as Router} from 'react-router-dom'
+import Header from './Container/Header/Header'
 
 class App extends Component {
     render() {
+        let header = null;
         return (
             <div>
-            <Routes/>
+                <Header/>
+                <Routes/>
             </div>
 
         );
