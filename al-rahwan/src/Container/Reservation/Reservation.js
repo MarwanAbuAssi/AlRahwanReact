@@ -15,7 +15,7 @@ let view =null;
 if(this.state.show){
     view =<ViewReservation show={this.state.show}
                            hide={this.handelHide}
-    >f</ViewReservation>
+    ></ViewReservation>
 }
         return (
 

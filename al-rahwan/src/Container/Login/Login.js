@@ -7,7 +7,7 @@ class LoginPage extends React.Component {
 
         return (
             <React.Fragment>
-                {/*<Login/>*/}
+                <Login/>
             </React.Fragment>
         )
     }
