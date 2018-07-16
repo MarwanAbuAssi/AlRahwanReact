@@ -32,7 +32,7 @@ class Reservation extends Component {
                         <input className="reFormInput" type="date" required min="2000-01-02"></input>
                         <label>Time:</label>
                         <input className="reFormInput" type="time" required></input>
-                        <lable> Please choose which Area you want to book:</lable>
+                        <label> Please choose which Area you want to book:</label>
                         <br/>
                         <input type="checkbox"></input>Area 1<br/>
                         <input type="checkbox"></input>Area 2<br/>

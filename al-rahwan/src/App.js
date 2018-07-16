@@ -15,15 +15,22 @@ import ViewReservation from './Container/viewReservation/viewReservation'
 import {Route, Switch} from 'react-router-dom'
 import {BrowserRouter as Router} from 'react-router-dom'
 import Header from './Container/Header/Header'
+import {withRouter} from 'react-router-dom'
+import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
+import BrowserRouter from "react-router-dom/es/BrowserRouter";
 
 class App extends Component {
     render() {
-        let header = null;
+        let header = <Header/>;
         return (
-            <div>
-                <Header/>
-                <Routes/>
-            </div>
+            <BrowserRouter>
+                <div>
+
+                    <Routes/>
+                </div>
+
+            </BrowserRouter>
 
         );
     }

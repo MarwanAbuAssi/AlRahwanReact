@@ -12,6 +12,11 @@
     color: #7b7b7b;
 
 }
+.item a:hover,
+.item a:active,
+.item a.active {
+    color: #c8374b;
+}
 
 .userDiv {
     float: right;

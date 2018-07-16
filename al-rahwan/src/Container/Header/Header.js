@@ -1,15 +1,16 @@
 import React from 'react';
-import  './Header.css'
+import  './Header.css';
+import {NavLink,Link, withRouter} from 'react-router-dom'
 class Header extends React.Component {
     render() {
 
 
         return (
             <div className='headerDiv ' >
-                <span className='item'>Home</span>
-                <span className='item'>Reservation</span>
-                <span className='item'>Calender</span>
-                <span className="userDiv " >User</span>
+                <a href="/" className='item'>Home</a>
+                <NavLink to="reservation" className='item'>Reservation</NavLink>
+                <NavLink to="/calender" className='item' >Calender</NavLink>
+                <NavLink to="/login">User</NavLink>
 
             </div>
         )

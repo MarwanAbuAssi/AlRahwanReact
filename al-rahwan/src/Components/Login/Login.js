@@ -10,13 +10,13 @@ const Login = (props) => (
                 <div className="ui-datepicker-title">
                     <h3>Login</h3>
                 </div>
-                <label for="fname">User Name</label>
+                <label >User Name</label>
                 <input className="loginInput" type="text" id="fname" name="userName" placeholder="UserName">
 
                 </input>
 
-                <label for="lname">Password</label>
-                <input class="loginInput" type="password" id="lname" name="lastname" placeholder="Password">
+                <label >Password</label>
+                <input className="loginInput" type="password" id="lname" name="lastname" placeholder="Password">
                 </input>
 
 
