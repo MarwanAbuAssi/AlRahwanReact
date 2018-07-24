@@ -10,12 +10,16 @@
     box-shadow: 0 1px 30px 0 rgba(0, 0, 0, 0.05);
     tab-size: 19px;
 }
-#mainDiv{
-    background-image:url("../../Assets/Images/adult-baking-bride-543226.jpg");
+
+#mainDiv {
+    height: 1000px !important;
+
+    background-image: url("../../Assets/Images/adult-baking-bride-543226.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
+
 .reFormInput {
     width: 100%;
     padding: 12px 20px;
@@ -26,7 +30,8 @@
     box-sizing: border-box;
     margin-bottom: 10px;
 }
-.welcomeDiv{
+
+.welcomeDiv {
     text-align: center;
 
     text-shadow: 2px 2px 5px #ff6f87;
@@ -35,37 +40,45 @@
     padding: 30px;
 
 }
-input[type=checkbox], select {
-    margin-left: 30px;
-    margin-right: 5px;
-}
-.submitText{
+
+.submitText {
+
     text-align: center;
     color: #00ac21;
     font-size: 20px;
     cursor: pointer;
-    display: inline-block;
     margin: 15px;
+    background-color: #eeeeee;
+    border: none;
 
 }
-.submitText:hover{
+
+.submitText:hover {
     color: #00f12c;
 
 }
-.canelText{
+
+.canelText {
     text-align: center;
     color: #aa000a;
     font-size: 20px;
     cursor: pointer;
     display: inline-block;
     margin: 15px;
-
+    border: none;
+    background-color: #eeeeee;
 
 }
-.canelText:hover{
+
+.canelText:hover {
     color: #ff0013;
 
 }
-.buttonsDiv{
+
+.buttonsDiv {
     text-align: center;
+}
+
+.checkBoxElement.label {
+    color: red;
 }

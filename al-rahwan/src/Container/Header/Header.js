@@ -3,7 +3,7 @@ import  './Header.css';
 import {NavLink,Link, withRouter} from 'react-router-dom'
 class Header extends React.Component {
     render() {
-
+        console.log("---------------------------");
 
         return (
             <div className='headerDiv ' >

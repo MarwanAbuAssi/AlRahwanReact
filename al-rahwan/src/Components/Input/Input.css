@@ -1,0 +1,13 @@
+.InputElement{
+    width: 100%;
+    margin-bottom: 5px;
+}
+.checkboxGroup{
+    margin: 7px;
+    background-color: #b4b4b41c;
+}
+input[type=checkbox]{
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 15px;
+}
