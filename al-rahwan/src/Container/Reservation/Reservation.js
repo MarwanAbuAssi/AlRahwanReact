@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import ViewReservation from '../viewReservation/viewReservation'
 import Input from '../../Components/Input/Input'
 import "./Reservation.css"
-
+import axiosService from '../../Services/axiosService'
 class Reservation extends Component {
 
     state = {
@@ -149,6 +149,9 @@ class Reservation extends Component {
             }
 
         }
+        this.props.onReserve(data);
+        this.store(data)
+
     }
 
     inputChangedHandler = (event, controlName) => {
@@ -173,16 +176,24 @@ class Reservation extends Component {
         }
 
         this.setState({controls: updateForm})
-
     };
 
+store=(data)=>{
+    alert("hi")
+    axiosService.post("https://alrahwanreact.firebaseio.com/alrahwanreact/reservation.json",data)
+        .then(response => {
+        console.log(response.data);
+        // dispatch(purchaseBurgerSuccess(response.data.name, orderData));
+    })
+        .catch(error => {
+            console.log(error)
+            // dispatch(purchaseBurgerFail(error));
+        });;
+}
 
-    handelHide = () => {
-        this.setState({show: false});
-    }
 
     render() {
-
+console.log(this.props.reservationArray)
         const formElementsArray = [];
         for (let key in this.state.controls) {
             formElementsArray.push({
@@ -226,11 +237,11 @@ class Reservation extends Component {
                     <form>
                         {form}
                         <div style={{textAlign: "center"}}>
-                            <button onClick={(e) => {
+                            <a onClick={(e) => {
                                 this.submitHandler()
                                 e.preventDefault()
                             }} className="submitText">Submit
-                            </button>
+                            </a>
                             <button className="canelText">Cancel</button>
                         </div>
                     </form>
